@@ -8,7 +8,10 @@
     "mocha": true
   },
 
-  "globals": {},
+  "globals": {
+    "google": true,
+    "markers": true
+  },
 
   "rules": {
     "vars-on-top": 0,
