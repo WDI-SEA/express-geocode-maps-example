@@ -6,16 +6,16 @@ var app = express();
 
 app.set('view engine', 'ejs');
 app.use(require('morgan')('dev'));
-app.use(bodyParser.urlencoded({extended: false}));
+app.use(bodyParser.urlencoded({ extended: false }));
 app.use(ejsLayouts);
 app.use(express.static(__dirname + '/public'));
 
 app.get('/', function(req, res) {
   db.place.findAll().then(function(places) {
-    res.render('index', {places});
+    res.render('index', { places: places });
   }).catch(function(err) {
-    res.send({message: 'error', error: err});
-  })
+    res.send({ message: 'error', error: err });
+  });
 });
 
 app.post('/places', function(req, res) {
@@ -25,8 +25,8 @@ app.post('/places', function(req, res) {
   }).then(function(place) {
     res.redirect('/');
   }).catch(function(err) {
-    res.send({message: 'error', error: err});
-  })
+    res.send({ message: 'error', error: err });
+  });
 });
 
 var server = app.listen(process.env.PORT || 3000);
