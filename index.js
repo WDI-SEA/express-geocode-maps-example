@@ -5,9 +5,10 @@ var db = require('./models');
 var app = express();
 
 app.set('view engine', 'ejs');
+app.use(require('morgan')('dev'));
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(ejsLayouts);
-app.use(express.static(__dirname + '/static'));
+app.use(express.static(__dirname + '/public'));
 
 app.get('/', function(req, res) {
   db.place.findAll().then(function(places) {
@@ -28,4 +29,6 @@ app.post('/places', function(req, res) {
   })
 });
 
-app.listen(3000);
+var server = app.listen(process.env.PORT || 3000);
+
+module.exports = server;
