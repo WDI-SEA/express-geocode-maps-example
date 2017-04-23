@@ -1,6 +1,6 @@
-#Express Geocoding and Maps
+# Express Geocoding and Maps
 
-##Setup
+## Setup
 
 * Fork and clone this repository
 * Run `npm install` to install packages
