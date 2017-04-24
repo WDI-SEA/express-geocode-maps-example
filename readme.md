@@ -14,12 +14,12 @@
 You are modifying an existing application. First, you must get familiar with what the application currently does.
 
 1. What modules/middleware does this application use? Describe what each one does.
-* What are the routes for the website? Describe what each one does.
+2. What are the routes for the website? Describe what each one does.
   * Verb + Route?
   * Interaction with database?
   * Response to browser?
-* What does the site do right now?
-* What features need to be added?
+3. What does the site do right now?
+4. What features need to be added?
 
 ## Task
 
