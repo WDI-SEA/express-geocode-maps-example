@@ -11,19 +11,19 @@
 
 ## Questions
 
-  You are modifying an existing application. First, you must get familiar with what the application currently does.
+You are modifying an existing application. First, you must get familiar with what the application currently does.
 
-  1. What modules/middleware does this application use? Describe what each one does.
-  * What are the routes for the website? Describe what each one does.
-    * Verb + Route?
-    * Interaction with database?
-    * Response to browser?
-  * What does the site do right now?
-  * What features need to be added?
+1. What modules/middleware does this application use? Describe what each one does.
+* What are the routes for the website? Describe what each one does.
+  * Verb + Route?
+  * Interaction with database?
+  * Response to browser?
+* What does the site do right now?
+* What features need to be added?
 
 ## Task
 
-  See [this page](https://wdi_sea.gitbooks.io/notes/content/05-express/additional-topics/express-geocode/readme.html)
+See [this page](https://wdi_sea.gitbooks.io/notes/content/05-express/additional-topics/express-geocode/readme.html)
 
 ---
 
